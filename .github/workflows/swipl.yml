@@ -39,4 +39,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Test scasp
         working-directory: ./src
-        run: swipl test_scasp.pl
+        run: swipl test_scasp.pl -- '../test/pq.pl' '../test/birds.pl' '../test/family.pl' '../test/hamcycle.pl'
